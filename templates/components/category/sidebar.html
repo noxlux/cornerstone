@@ -17,4 +17,19 @@
     {{else}}
         {{> components/category/shop-by-price shop_by_price=category.shop_by_price category_url=category.url}}
     {{/if}}
+
+    {{#if categories}}
+        <ul class="navList">
+            {{#each categories}}
+            <li class="navList-item">
+                <a class="navList-action" href="{{url}}">{{this.name}}</a>
+            </li>
+            {{/each}}
+        </ul>
+    {{/if}}
+    <ul class="navList">
+        <li class="navList-item">
+            <a class="navList-action" id="three_specific_jars_and_three_coffepots">Three Coffeepots and Three Specific Jars</a>
+        </li>
+    </ul>
 </nav>
